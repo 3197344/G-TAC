@@ -27,14 +27,21 @@ header {
 }
 .name{
     font-size: 3rem;
-        // font-size: 2rem;
 }
 
 p{
     margin: 1.5rem 0;
     line-height: 2rem;
 }
+.tag{
+    cursor: pointer;
 
+}
+.tag:hover,
+.tag:focus {
+    color: var(--color-secondary);
+
+}
 .h-shape{
     transition: all .4s ease-in-out;
     width: 65%;
@@ -65,4 +72,8 @@ filter: grayscale(100%);
     &:hover{
         filter: grayscale(0%);
     }
+}
+li  :hover,
+    :focus{
+    color: aqua;
 }

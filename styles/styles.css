@@ -8,7 +8,7 @@
 
 :root {
   --color-primary: #191d2b;
-  --color-secondary: #38c71b;
+  --color-secondary: #d45500;
   --color-white: #ffffff;
   --color-black: #000000;
   --color-grey0: #f8f8f8;
@@ -24,7 +24,7 @@
 
 .light-mode {
   --color-primary: #FFFFFF;
-  --color-secondary: #c52ad3;
+  --color-secondary: #0167c7;
   --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -179,6 +179,15 @@ p {
   line-height: 2rem;
 }
 
+.tag {
+  cursor: pointer;
+}
+
+.tag:hover,
+.tag:focus {
+  color: var(--color-secondary);
+}
+
 .h-shape {
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
@@ -216,6 +225,11 @@ img {
 img:hover {
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
+}
+
+li :hover,
+:focus {
+  color: aqua;
 }
 
 .controlls {
@@ -391,7 +405,7 @@ img:hover {
   position: relative;
   text-transform: uppercase;
   font-size: 4rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .main-title h2 span {
@@ -400,7 +414,7 @@ img:hover {
 
 .main-title h2 .bg-text {
   position: absolute;
-  top: 50%;
+  top: 43%;
   left: 50%;
   color: var(--color-grey-5);
   -webkit-transition: all .4s ease-in-out;
@@ -409,7 +423,7 @@ img:hover {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-weight: 800;
-  font-size: 6.3rem;
+  font-size: 4rem;
 }
 
 .about-container {
@@ -818,7 +832,7 @@ img:hover {
 
 .blogs .blog img {
   width: 100%;
-  height: 300px;
+  height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
   border-top-left-radius: 5px;
@@ -1036,7 +1050,7 @@ img:hover {
     margin: 0 auto;
   }
   .right-header .name {
-    font-size: 2.5rem !important;
+    font-size: 3rem !important;
     text-align: center;
     padding-top: 3rem;
   }
@@ -1257,7 +1271,7 @@ img:hover {
     margin: 0 auto;
   }
   .right-header .name {
-    font-size: 2.5rem !important;
+    font-size: 3rem !important;
     text-align: center;
     padding-top: 3rem;
   }
